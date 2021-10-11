@@ -1,0 +1,358 @@
+/* Для шриштів: налаштування шрифта+кирилиця, підключаємо завжди! Чистимо непотрібні розміри шрифта в посиланні, для кращої оптимізації.
+ &display=swap&subset=cyrillic-ext */
+
+/*@import url("https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:300,300italic,regular,italic,700,700italic&display=swap&subset=cyrillic-ext");*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/*@font-face {
+  font-family: "Polaris";
+  src: url("../fonts/Polaris.woff2") format("woff2"), url("../fonts/Polaris.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+/*@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-CaptionBold.woff2") format("woff2"), url("../fonts/PTSans-CaptionBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Caption.woff2") format("woff2"), url("../fonts/PTSans-Caption.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+
+/* Обнулення СТИЛІВ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1;
+}
+
+.footer {
+  font-family: "Roboto", serif;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+/* --------------- */
+.block {
+}
+.blocktravel {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.blockContent {
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  color: #70757a;
+  padding: 50px 0px 80px 0px;
+}
+.blockBG {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0px 0px -40px 0px;
+}
+.link {
+  display: inline-block;
+  color: #000000;
+  font-size: 56px;
+  margin: 0px 0px 50px 0px;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #000000;
+  margin: 30px 0px 0px 0px;
+}
+.link:hover:after {
+  content: "";
+  display: block;
+  width: 255px;
+  height: 3px;
+  background-color: #aecbfa;
+}
+
+.blockContent:hover .blockBG {
+  opacity: 1;
+  visibility: visible;
+}
+.link:hover {
+  color: #aecbfa;
+}
+.icons {
+  display: none;
+  color: #3c4043;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 800px;
+  height: 56px;
+  margin: 0px auto;
+  vertical-align: top;
+}
+.icons:target {
+  display: block;
+}
+.iconsbody {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 20px 20px 0px;
+}
+.icons *:last-child {
+  margin-right: 0px;
+}
+.iconsbody :hover {
+  background-color: #aecbfa;
+}
+.iconscontent {
+  vertical-align: top;
+  padding: 10px;
+  border-radius: 10px;
+}
+.iconsbody :focus {
+  outline: none;
+  color: #d93025;
+}
+.iconsimg {
+  display: inline-block;
+  margin: 8px;
+}
+.iconstext {
+  max-width: 100px;
+  padding: 10px;
+}
+.iconstext a {
+  color: #3c4043;
+}
+
+.iconstext a:hover {
+  font-weight: 700;
+}
+
+.iconstext a:visited {
+  color: #000000;
+}
+.iconstext a:active {
+  color: #fab703;
+}
+.blocktextcontent {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 9%,
+    rgba(255, 255, 255, 0.712) 29%,
+    rgba(174, 203, 250, 0.465) 67%,
+    rgb(174, 203, 250) 100%
+  );
+  border-radius: 20px;
+  padding: 0px 0px 50px 0px;
+}
+.blocktext {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.blocktextlist {
+  padding: 50px 0px;
+}
+.textlist {
+}
+
+.textlist *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+
+.textlist a {
+  color: #fab703;
+}
+.textlist a:hover {
+  color: #aecbfa;
+}
+.textlist li:hover {
+  text-align: center;
+}
+.textlist::first-line {
+  color: #d93025;
+}
+.textlist li::first-letter {
+  font-size: 20px;
+  text-shadow: 3px 3px 0px #d93025;
+}
+.blocktexttext {
+  padding: 0px 0px 50px 0px;
+}
+.blocktexttext *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.blocktexttext :nth-child(odd):hover {
+  padding: 15px;
+  border-radius: 30%;
+  box-shadow: 2px 2px 5px 10px #aecbfa;
+}
+.blocktexttext :nth-child(2):hover {
+  color: #fab703;
+}
+.blocktexttext h1:first-of-type {
+  font-size: 20px;
+}
+.blockpsevdo {
+}
+.blockpsevdobefore {
+  margin: 0px 0px 30px 0px;
+}
+
+.blockpsevdobeforelist li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fab703;
+  margin: 0px 10px 0px 0px;
+}
+ul *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.blockpsevdobeforelist li:hover::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  border-radius: 0%;
+  border-left: 5px solid #c6dafa;
+  border-right: 5px solid #c6dafa;
+  border-bottom: 10px solid #d93025;
+}
+.blockpsevdoafter {
+}
+.blockpsevdoafterlist li::after {
+  content: "...";
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  color: #d93025;
+  font-weight: 700;
+}
+.blockpsevdoafterlist li:nth-last-of-type(1) {
+  color: #d93025;
+}
+.blockpsevdoafterlist li:hover:nth-last-of-type(1) {
+  color: #d93025;
+  font-weight: 700;
+}
+.blockpsevdoafterlist li:nth-last-of-type(1):hover:after {
+  content: "...";
+  display: inline-block;
+  width: 1px;
+  height: 1px;
+  color: #1967d2;
+  font-weight: 900;
+}
+
+.blockchoose {
+  background-color: #303030;
+  padding: 50px 0px;
+}
+.choosecontainer {
+  font-family: "HelveticaNeue", serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.choosecontent {
+  max-width: 255px;
+  background-color: #252525;
+  border-radius: 6px;
+  padding: 24px 24px 60px 24px;
+}
+.choosetitle {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: -0.27px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.choosetitle::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background-color: #34c759;
+  margin: 24px 0px;
+}
+.choosetext {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.16px;
+  color: #ffffff80;
+}
+.choosecontent:hover {
+  background-color: #34c759;
+}
+
+.choosecontent h1:hover,
+.choosecontent p:hover {
+  color: #191919;
+}
+
+.choosetitle:hover::after {
+  background-color: #191919;
+}
