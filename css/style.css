@@ -97,14 +97,14 @@ body {
 }
 .blocktravel {
   max-width: 1020px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 .blockContent {
   font-size: 20px;
   line-height: 14px;
   text-align: center;
   color: #70757a;
-  padding: 50px 0px 80px 0px;
+  padding: 50px 0px 50px 0px;
 }
 .blockBG {
   opacity: 0;
@@ -115,7 +115,7 @@ body {
   display: inline-block;
   color: #000000;
   font-size: 56px;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .link::after {
@@ -137,6 +137,7 @@ body {
 .blockContent:hover .blockBG {
   opacity: 1;
   visibility: visible;
+  max-width: 100%;
 }
 .link:hover {
   color: #aecbfa;
@@ -210,9 +211,10 @@ body {
 .blocktext {
   max-width: 800px;
   margin: 0 auto;
+  padding: 30px;
 }
 .blocktextlist {
-  padding: 50px 0px;
+  padding: 0px 0px 30px 0px;
 }
 .textlist {
 }
@@ -238,7 +240,7 @@ body {
   text-shadow: 3px 3px 0px #d93025;
 }
 .blocktexttext {
-  padding: 0px 0px 50px 0px;
+  padding: 0px 0px 30px 0px;
 }
 .blocktexttext *:not(:last-child) {
   margin: 0px 0px 20px 0px;
